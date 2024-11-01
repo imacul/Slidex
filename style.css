@@ -1,0 +1,213 @@
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #5F5DF0;
+    color: white;
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ff9900; /* Highlight color */
+}
+
+/* Mobile menu hidden by default */
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hidden by default on mobile */
+        flex-direction: column;
+        gap: 30px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #5F5DF0;
+        padding: 20px;
+        border-radius: 5px;
+        width: 200px;
+        font-size: 2rem;
+        z-index: 5;
+    }
+    
+    .nav-logo{
+        padding-left: 10px;
+    }
+
+    .nav-links.active {
+        display: flex; /* Display menu on toggle */
+    }
+
+    .nav-toggle {
+        display: block; /* Show hamburger icon on mobile */
+    }
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.button-34 {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+
+
+html {
+  font-size: 16px; /* Set the root font size */
+  scroll-behavior: smooth;
+}
+
+
+main{
+    background-color: ica-rubrik-black;
+    padding: 6.25rem 1.875rem;
+}
+
+.desc {
+    font-size: 1.2rem;      /* Adjusts text size for readability */
+    line-height: 1.6;       /* Adds spacing between lines */
+    color: #555;            /* Subtle text color for good contrast */
+    max-width: 600px;       /* Keeps text width manageable for readability */
+    margin: 20px auto;      /* Centers text with spacing */
+    text-align: center;     /* Centers text alignment */
+    font-family: 'Arial', sans-serif; /* Sets a clean font style */
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    color: #555;
+}
+
+
+
+@keyframes autoRun{
+    from{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    }to{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+    }
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: Column;
+}
+ h1{
+    font-family: 'ICA Rubrik';
+    font-size: 16em;
+    line-height: 1em;
+    color:  #5E5DF0;
+    position: relative;
+}
+.banner .content h1::after{
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    -webkit-text-stroke: 2px #d2d2d2;
+    color: transparent;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .banner .content h1{
+        text-align: center;
+        width: 100%;
+        text-shadow: 0 10px 20px #000;
+        font-size: 7em;
+    }
+   
+}
+@media screen and (max-width: 767px) {
+    .banner .content h1{
+        font-size: 5em;
+    }
+}
+
+.heading{
+    font-size: 2rem;
+    font-weight: 4rem;
+    color: #5F5DF0;
+    text-align: center;
+}

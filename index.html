@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+     <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none
+            list-style: ;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+            to right, transparent 0 100px,
+            #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+            to bottom, transparent 0 100px,
+            #25283b22 100px 101px
+            );
+        }
+
+        section {
+            padding: 30px 0;
+            /* Top and bottom padding of 20px, no left and right padding */
+        }
+
+
+        body::before {
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="nav-logo">Slidex</div>
+    <div class="nav-toggle" id="navToggle">&#9776;</div> <!-- Hamburger icon for mobile -->
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#heroSliders" onclick="closeMenu()">Hero Sliders</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+</nav>
+  
+        <main>
+        <section id="home" class="banner">
+
+            <div class="content">
+                <h1 data-content="Enjoy Cool Sliders And More To Come...">
+                    Enjoy Cool Sliders And More To Come...
+                </h1>
+                <div>
+                    <p class="desc">
+                        Explore a unique collection of sliders designed to bring your content to life. From food showcases to plant galleries and everything in between, each slider is crafted with creativity and functionality to enhance any website.
+                    </p>
+                </div>
+            </div>
+
+            <a href="#heroSliders">
+            <button class="button-34" role="button">Explore sliders</button>
+            </section>
+            </a>
+            
+            <section id="heroSliders">
+            <div class="heading">Hero Sliders</div>
+            </section>
+             <section id="heroSliders">
+
+            <div class="heading">Food showcases</div>
+
+            </section>
+            
+             <section id="heroSliders">
+            <div class="heading">Plant galleries</div>
+            </section>
+            
+         <section id="heroSliders">
+            <div class="heading">Image Gallery Sliders</div>
+            </section>
+    
+    
+            </main>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<script src="app.js"></script>
+</html>
