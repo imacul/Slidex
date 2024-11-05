@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel website hero slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <main>
+        <header>
+            <h1 class="logo">
+               Slidex
+            </h1>
+            <nav>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                </svg>
+            </nav>
+        </header>
+        <section class="slider">
+            <div class="list">
+                <div class="item active">
+                    <div class="image" style="--url: url('img/img1.jpeg')"></div>
+                    <div class="content">
+                        <h2>Discover Hidden Gems Around the World</h2>
+                        <p>
+                          Uncover the beauty of lesser-known destinations with our curated travel experiences. Dive into unique adventures off the beaten path and create memories that last a lifetime.
+                        </p>
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="image" style="--url: url('img/img2.jpeg')"></div>
+                    <div class="content">
+                        <h2>Your Dream Vacation Awaits</h2>
+                        <p>
+                          From pristine beaches to bustling cityscapes, explore destinations that match your travel dreams. Let us guide you to the perfect getaway with tailored recommendations and insider tips.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/img3.jpeg')"></div>
+                    <div class="content">
+                        <h2>Adventure Is Out There</h2>
+                        <p>
+                            Experience the thrill of new places and cultures. Whether you’re chasing mountains, oceans, or landmarks, embark on a journey of a lifetime with our top travel picks and itineraries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+                <button id="prev">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

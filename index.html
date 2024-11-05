@@ -2,19 +2,19 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Responsive Navbar</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome Link for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-     <style>
+    <meta charset="utf-8">
+    <title>Slidex Sliders</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
 
         * {
             margin: 0;
             padding: 0;
             text-decoration: none
-            list-style: ;
+            list-style:;
             box-sizing: border-box;
         }
         body {
@@ -54,18 +54,21 @@
 </head>
 
 <body>
-<nav class="navbar">
-    <div class="nav-logo">Slidex</div>
-    <div class="nav-toggle" id="navToggle">&#9776;</div> <!-- Hamburger icon for mobile -->
-    <ul class="nav-links" id="navLinks">
-        <li><a href="#home" onclick="closeMenu()">Home</a></li>
-        <li><a href="#heroSliders" onclick="closeMenu()">Hero Sliders</a></li>
-        <li><a href="#services" onclick="closeMenu()">Services</a></li>
-        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-    </ul>
-</nav>
-  
-        <main>
+    <nav class="navbar">
+        <div class="nav-logo">
+            Slidex
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            &#9776;
+        </div>
+        <!-- Hamburger icon for mobile -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" onclick="closeMenu()">Home</a></li>
+            <li><a href="#heroSliders" onclick="closeMenu()">Hero Sliders</a></li>
+        </ul>
+    </nav>
+
+    <main>
         <section id="home" class="banner">
 
             <div class="content">
@@ -80,58 +83,155 @@
             </div>
 
             <a href="#heroSliders">
-            <button class="button-34" role="button">Explore sliders</button>
-            </section>
-            </a>
-            
-            <section id="heroSliders">
-            <div class="heading">Hero Sliders</div>
-            </section>
-             <section id="heroSliders">
+<button class="button1">
+  <span class="text">Explore</span>
+  <span class="svg">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="50"
+      height="20"
+      viewBox="0 0 38 15"
+      fill="none"
+    >
+      <path
+        fill="white"
+        d="M10 7.519l-.939-.344h0l.939.344zm14.386-1.205l-.981-.192.981.192zm1.276 5.509l.537.843.148-.094.107-.139-.792-.611zm4.819-4.304l-.385-.923h0l.385.923zm7.227.707a1 1 0 0 0 0-1.414L31.343.448a1 1 0 0 0-1.414 0 1 1 0 0 0 0 1.414l5.657 5.657-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364zM1 7.519l.554.833.029-.019.094-.061.361-.23 1.277-.77c1.054-.609 2.397-1.32 3.629-1.787.617-.234 1.17-.392 1.623-.455.477-.066.707-.008.788.034.025.013.031.021.039.034a.56.56 0 0 1 .058.235c.029.327-.047.906-.39 1.842l1.878.689c.383-1.044.571-1.949.505-2.705-.072-.815-.45-1.493-1.16-1.865-.627-.329-1.358-.332-1.993-.244-.659.092-1.367.305-2.056.566-1.381.523-2.833 1.297-3.921 1.925l-1.341.808-.385.245-.104.068-.028.018c-.011.007-.011.007.543.84zm8.061-.344c-.198.54-.328 1.038-.36 1.484-.032.441.024.94.325 1.364.319.45.786.64 1.21.697.403.054.824-.001 1.21-.09.775-.179 1.694-.566 2.633-1.014l3.023-1.554c2.115-1.122 4.107-2.168 5.476-2.524.329-.086.573-.117.742-.115s.195.038.161.014c-.15-.105.085-.139-.076.685l1.963.384c.192-.98.152-2.083-.74-2.707-.405-.283-.868-.37-1.28-.376s-.849.069-1.274.179c-1.65.43-3.888 1.621-5.909 2.693l-2.948 1.517c-.92.439-1.673.743-2.221.87-.276.064-.429.065-.492.057-.043-.006.066.003.155.127.07.099.024.131.038-.063.014-.187.078-.49.243-.94l-1.878-.689zm14.343-1.053c-.361 1.844-.474 3.185-.413 4.161.059.95.294 1.72.811 2.215.567.544 1.242.546 1.664.459a2.34 2.34 0 0 0 .502-.167l.15-.076.049-.028.018-.011c.013-.008.013-.008-.524-.852l-.536-.844.019-.012c-.038.018-.064.027-.084.032-.037.008.053-.013.125.056.021.02-.151-.135-.198-.895-.046-.734.034-1.887.38-3.652l-1.963-.384zm2.257 5.701l.791.611.024-.031.08-.101.311-.377 1.093-1.213c.922-.954 2.005-1.894 2.904-2.27l-.771-1.846c-1.31.547-2.637 1.758-3.572 2.725l-1.184 1.314-.341.414-.093.117-.025.032c-.01.013-.01.013.781.624zm5.204-3.381c.989-.413 1.791-.42 2.697-.307.871.108 2.083.385 3.437.385v-2c-1.197 0-2.041-.226-3.19-.369-1.114-.139-2.297-.146-3.715.447l.771 1.846z"
+      ></path>
+    </svg>
+  </span>
+</button>
 
-            <div class="heading">Food showcases</div>
+            </section>
+        </a>
 
-            </section>
-            
-             <section id="heroSliders">
-            <div class="heading">Plant galleries</div>
-            </section>
-            
-         <section id="heroSliders">
-            <div class="heading">Image Gallery Sliders</div>
-            </section>
-    
-    
-            </main>
+        <section class="slider-gallery" id="hero-slider1">
+            <h2 class="heading">Explore Our Hero Sliders</h2>
+            <p class="des">Transform your website's first impression with our collection of engaging Hero Sliders! These sliders are designed to captivate viewers instantly, enhancing visual appeal and spotlighting key content. Whether you're showcasing products, telling a story, or setting the tone for your brand, our hero sliders offer customizable animations, smooth transitions, and user-friendly navigation to elevate any page. Perfect for businesses, portfolios, or creatives, these sliders can make your content memorable and impactful.</p>
+            <div class="card-container">
+                <!-- Card 1 -->
+                <div class="slider-card">
+                    <img src="images/preview_1.jpg" alt="Slider 1 Preview" class="slider-image">
+                    <div class="card-content">
+                        <h3>Animal Hero Slider</h3>
+                        <p>
+                            Experience captivating transitions with the Animal Hero Slider! Perfect for wildlife, pet, or nature-themed websites, this slider brings images of animals to life with seamless animations. Each animal image slides in with dynamic titles and descriptions following in sync, creating an engaging visual story. Navigate effortlessly between slides to showcase a variety of animal images and information.
+                        </p>
+                        <a href="pages/Herosliders/slider_1/index.html">
+<button class="button">Preview</button>
+                        </a>
+                    </div>
+                </div>
 
+                <!-- Card 2 -->
+                <div class="slider-card">
+                    <img src="images/preview_2.jpg" alt="Slider 2 Preview" class="slider-image">
+                    <div class="card-content">
+                        <h3>Perfect for travel websites</h3>
+                        <p>
+                        Elevate your website's appeal with our dynamic travel sliders. Each click takes your audience on a visual journey, with smooth transitions that rotate stunning images, engaging headings, and compelling descriptions into view. Perfect for inspiring wanderlust, these sliders make it easy to highlight multiple destinations.
+                        </p>
+                        <a href="pages/Herosliders/slider_2/index.html">
+<button class="button">Preview</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="slider-card">
+
+                    <img src="images/preview_3.jpg" alt="Slider 3 Preview" class="slider-image">
+                    <div class="card-content">
+                        <h3>Product Slider</h3>
+                        <p>
+                            Showcase your products in style with our engaging Product Slider! Ideal for e-commerce, it highlights each product with smooth transitions, clear descriptions, and easy navigation. Perfect for grabbing attention, this slider makes browsing enjoyable and encourages purchases by keeping your best items front and center
+                        </p>
+                        <a href="pages/Herosliders/slider_3/index.html">
+<button class="button">Preview</button>
+                        </a>
+                    </div>
+                </div>
+                
+                
+                                <!-- Card 4 -->
+
+                <div class="slider-card">
+
+                    <img src="images/preview_4.jpg" alt="Slider 3 Preview" class="slider-image">
+                    <div class="card-content">
+                        <h3>Step Up Your Style with Nike</h3>
+                        <p>
+Present your Nike sneaker collection with this sleek, modern slider! Designed to captivate, it highlights each sneaker’s unique style and features with smooth, interactive transitions. Perfect for sneaker retailers and enthusiasts, this slider draws attention and enhances the shopping experience by showcasing your best products in an eye-catching way.
+                        </p>
+                        <a href="pages/Herosliders/slider_4/index.html">
+<button class="button">Preview</button>
+
+                            
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="heroSliders">
+
+            <div class="heading">
+                Food showcases
+              <p>Comming soon..</p>
+            </div>
+        </section>
+
+        <section id="heroSliders">
+            <div class="heading">
+                Plant galleries
+              <p>Comming soon..</p>
+            </div>
+        </section>
+
+        <section id="heroSliders">
+            <div class="heading">
+                Image Gallery Sliders
+                <p>Comming soon..</p>
+            </div>
+             
+        </section>
+
+
+    </main>
+<footer style="text-align: center; padding: 20px; background-color: #006aff; color: white">
+  <p><strong>Slidex</strong></p>
+  <p>&copy; 2024</p>
+</footer>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+    $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+                // Store hash
+                var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
 </script>
 <script src="app.js"></script>
 </html>
